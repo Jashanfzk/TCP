@@ -1,0 +1,39 @@
+@model TorontoCricketLeague.Models.Franchise
+
+@{
+    ViewData["Title"] = "Franchise Details";
+}
+
+<div class="container">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <hr />
+
+    <div class="card shadow-sm">
+        <div class="card-header">
+            <h2>@Html.DisplayFor(model => model.Name)</h2>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Home City</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.HomeCity)</dd>
+
+                <dt class="col-sm-3">Logo</dt>
+                <dd class="col-sm-9">
+                    @if (!string.IsNullOrEmpty(Model.LogoUrl))
+                    {
+                        <img src="@Model.LogoUrl" alt="Logo" style="max-width: 200px;" />
+                    }
+                    else
+                    {
+                        <span class="text-muted">No Logo Provided</span>
+                    }
+                </dd>
+            </dl>
+        </div>
+    </div>
+    
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.FranchiseId" class="btn btn-primary">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

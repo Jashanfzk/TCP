@@ -1,0 +1,33 @@
+@model TorontoCricketLeague.Models.Franchise
+
+@{
+    ViewData["Title"] = "Delete Franchise";
+}
+
+<div class="container">
+    <h1 class="display-4 text-danger">@ViewData["Title"]</h1>
+    <h3 class="text-danger">Are you sure you want to delete this?</h3>
+    <hr />
+
+    <div class="alert alert-danger">
+        This action cannot be undone.
+    </div>
+
+    <div class="card shadow-sm mt-4">
+        <div class="card-header">
+            <h4>@Html.DisplayFor(model => model.Name)</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Home City</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.HomeCity)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="mt-4">
+        <input type="hidden" asp-for="FranchiseId" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>

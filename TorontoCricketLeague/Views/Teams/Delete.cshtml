@@ -1,0 +1,21 @@
+@model TorontoCricketLeague.Models.Team
+
+@{
+    ViewData["Title"] = "Delete Team";
+}
+
+<div class="container">
+    <h1 class="display-4 text-danger">@ViewData["Title"]</h1>
+    <h3>Are you sure you want to delete the team: <strong>@Model.Name</strong>?</h3>
+    <hr />
+
+    <div class="alert alert-danger">
+        This action cannot be undone.
+    </div>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="TeamId" />
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">No, Cancel</a>
+    </form>
+</div>

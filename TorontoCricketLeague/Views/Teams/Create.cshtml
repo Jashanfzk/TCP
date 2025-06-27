@@ -1,0 +1,51 @@
+@model TorontoCricketLeague.Models.Team
+
+@{
+    ViewData["Title"] = "Create Team";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <hr />
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="City" class="control-label"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="FranchiseId" class="control-label">Franchise</label>
+                        <select asp-for="FranchiseId" class="form-control" asp-items="ViewBag.FranchiseId">
+                            <option value="">-- Select Franchise --</option>
+                        </select>
+                        <span asp-validation-for="FranchiseId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="LogoUrl" class="control-label"></label>
+                        <input asp-for="LogoUrl" class="form-control" />
+                        <span asp-validation-for="LogoUrl" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-4">
+                        <button type="submit" class="btn btn-primary">Create</button>
+                        <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
