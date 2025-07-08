@@ -5,8 +5,8 @@ using TorontoCricketLeague.Models;
 namespace TorontoCricketLeague.Models
 {
     /// <summary>
-    /// Represents a team in the Toronto Cricket League.
-    /// Each team belongs to a franchise and has multiple players and sponsors.
+    /// This model represents a team in the cricket league
+    /// It stores information about teams and their relationships with franchises, players, and sponsors
     /// </summary>
     /// <example>
     /// var team = new Team 
@@ -17,9 +17,6 @@ namespace TorontoCricketLeague.Models
     ///     FranchiseId = 1
     /// };
     /// </example>
-    /// <result>
-    /// The team is created and linked to its franchise.
-    /// </result>
     public class Team
     {
         public int TeamId { get; set; }

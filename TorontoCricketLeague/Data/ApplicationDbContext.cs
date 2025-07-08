@@ -5,16 +5,13 @@ using TorontoCricketLeague.Models;
 namespace TorontoCricketLeague.Data
 {
     /// <summary>
-    /// Main database context for the Toronto Cricket League application.
-    /// Manages all database operations and entity relationships.
+    /// This class manages the database context for the cricket league application
+    /// It handles all database operations and entity relationships
     /// </summary>
     /// <example>
     /// var context = new ApplicationDbContext(options);
     /// var teams = await context.Teams.Include(t => t.Franchise).ToListAsync();
     /// </example>
-    /// <result>
-    /// Database operations are performed and data is retrieved/stored.
-    /// </result>
     public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

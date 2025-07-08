@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TorontoCricketLeague")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ea10afbf5db549fe86a1c73d3adcf47c91a9213")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01b39ab8c7136fdf32816c5bdea2bf98722ca64e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TorontoCricketLeague")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TorontoCricketLeague")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

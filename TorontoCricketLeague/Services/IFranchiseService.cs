@@ -5,9 +5,8 @@ using TorontoCricketLeague.DTOs;
 namespace TorontoCricketLeague.Services
 {
     /// <summary>
-    /// Interface for Franchise service operations in the Toronto Cricket League.
-    /// Defines the contract for franchise-related business logic and data operations.
-    /// Provides methods for retrieving franchise information with computed properties.
+    /// This interface defines the contract for franchise service operations
+    /// It provides methods for retrieving franchise information with computed properties
     /// </summary>
     /// <example>
     /// Service Implementation:
@@ -15,16 +14,10 @@ namespace TorontoCricketLeague.Services
     /// var franchises = await franchiseService.GetAllFranchisesAsync();
     /// var franchise = await franchiseService.GetFranchiseByIdAsync(1);
     /// </example>
-    /// <returns>
-    /// Provides a service layer abstraction for:
-    /// - Franchise data retrieval operations
-    /// - Business logic encapsulation
-    /// - Dependency injection support
-    /// </returns>
     public interface IFranchiseService
     {
         /// <summary>
-        /// Retrieves all franchises with their team and sponsor counts.
+        /// Gets all franchises with their team and sponsor counts
         /// </summary>
         /// <returns>
         /// A collection of FranchiseDto objects containing franchise details with computed counts.
@@ -39,7 +32,7 @@ namespace TorontoCricketLeague.Services
         Task<IEnumerable<FranchiseDto>> GetAllFranchisesAsync();
 
         /// <summary>
-        /// Retrieves a specific franchise by its ID with team and sponsor counts.
+        /// Gets a specific franchise by its ID with team and sponsor counts
         /// </summary>
         /// <param name="id">The unique identifier of the franchise to retrieve.</param>
         /// <returns>

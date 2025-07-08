@@ -4,9 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace TorontoCricketLeague.DTOs
 {
     /// <summary>
-    /// Data Transfer Object for Franchise entities in the Toronto Cricket League.
-    /// Used for API responses to provide franchise information with computed properties.
-    /// Contains basic franchise details along with team and sponsor counts.
+    /// This DTO is used for franchise data transfer in API responses
+    /// It provides franchise information with computed team and sponsor counts
     /// </summary>
     /// <example>
     /// API Response Example:
@@ -19,12 +18,6 @@ namespace TorontoCricketLeague.DTOs
     ///     "SponsorCount": 2
     /// }
     /// </example>
-    /// <returns>
-    /// Provides a clean data structure for API responses with:
-    /// - Core franchise information
-    /// - Computed counts of related entities
-    /// - Consistent data format for external consumers
-    /// </returns>
     public class FranchiseDto
     {
         /// <summary>

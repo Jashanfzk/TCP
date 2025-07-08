@@ -11,35 +11,14 @@ using TorontoCricketLeague.DTOs;
 namespace TorontoCricketLeague.Controllers
 {
     /// <summary>
-    /// Controller for managing Player entities in the Toronto Cricket League.
-    /// Handles CRUD operations for players including create, read, update, and delete.
-    /// Provides both web interface and API endpoints for player management.
+    /// This controller handles player operations for the cricket league
+    /// It provides endpoints for creating, viewing, editing, and deleting players
     /// </summary>
     /// <example>
-    /// Web Interface:
-    /// GET /Players - Shows list of all players with team information
-    /// GET /Players/Details/1 - Shows detailed view of player with ID 1
-    /// GET /Players/Create - Shows form to create a new player
-    /// POST /Players/Create - Creates a new player from form data
-    /// GET /Players/Edit/1 - Shows form to edit player with ID 1
-    /// POST /Players/Edit/1 - Updates player with ID 1
-    /// GET /Players/Delete/1 - Shows confirmation to delete player with ID 1
-    /// POST /Players/Delete/1 - Deletes player with ID 1
-    /// 
-    /// API Endpoints:
-    /// GET /Players/ListPlayers - Returns JSON list of all players
-    /// GET /Players/FindPlayer/1 - Returns JSON player with ID 1
-    /// POST /Players/CreatePlayer - Creates new player via API
-    /// PUT /Players/UpdatePlayer/1 - Updates player via API
-    /// DELETE /Players/DeletePlayer/1 - Deletes player via API
+    /// GET /Players - Shows list of all players
+    /// POST /Players/Create - Creates a new player
+    /// GET /Players/ListPlayers - Returns JSON list of players
     /// </example>
-    /// <returns>
-    /// Provides complete player management with:
-    /// - Web interface for administrators
-    /// - RESTful API endpoints for external access
-    /// - Data Transfer Objects for API responses
-    /// - Proper validation and error handling
-    /// </returns>
     public class PlayersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -51,7 +30,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all players in the system with their team information.
+        /// Shows a list of all players with their team information
         /// </summary>
         /// <example>
         /// GET /Players -> Returns view with list of all players
@@ -71,7 +50,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Retrieves a specific player's details by their ID.
+        /// Shows details for a specific player by ID
         /// </summary>
         /// <param name="id">The unique identifier of the player.</param>
         /// <returns>
@@ -104,7 +83,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to create a new player.
+        /// Shows the form to create a new player
         /// </summary>
         /// <returns>
         /// A view with the create player form including team selection.
@@ -122,7 +101,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Creates a new player in the database.
+        /// Creates a new player in the database
         /// </summary>
         /// <param name="player">The player object to add.</param>
         /// <returns>
@@ -154,7 +133,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to edit an existing player.
+        /// Shows the form to edit an existing player
         /// </summary>
         /// <param name="id">The unique identifier of the player to edit.</param>
         /// <returns>
@@ -188,7 +167,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing player in the database.
+        /// Updates an existing player in the database
         /// </summary>
         /// <param name="id">The unique identifier of the player.</param>
         /// <param name="player">The updated player object.</param>
@@ -242,7 +221,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the confirmation page to delete a player.
+        /// Shows the confirmation page to delete a player
         /// </summary>
         /// <param name="id">The unique identifier of the player to delete.</param>
         /// <returns>
@@ -275,7 +254,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a player from the database based on their ID.
+        /// Deletes a player from the database based on their ID
         /// </summary>
         /// <param name="id">The ID of the player to delete.</param>
         /// <returns>
@@ -311,7 +290,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all players as JSON with team information.
+        /// Returns a list of all players as JSON with team information
         /// </summary>
         /// <example>
         /// GET /Players/ListPlayers -> [{"PlayerId":1, "Name":"John Doe", "Age":25, "Role":"Batsman", "TeamName":"Super Kings A"}, ...]
@@ -345,7 +324,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Retrieves a specific player's details by their ID as JSON.
+        /// Retrieves a specific player's details by their ID as JSON
         /// </summary>
         /// <param name="id">The unique identifier of the player.</param>
         /// <returns>
@@ -386,7 +365,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Adds a new player to the database via API.
+        /// Adds a new player to the database via API
         /// </summary>
         /// <param name="playerDto">The player DTO object to add.</param>
         /// <returns>
@@ -434,7 +413,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing player in the database via API.
+        /// Updates an existing player in the database via API
         /// </summary>
         /// <param name="id">The unique identifier of the player.</param>
         /// <param name="playerDto">The updated player DTO object.</param>
@@ -501,7 +480,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a player from the database based on their ID via API.
+        /// Deletes a player from the database based on their ID via API
         /// </summary>
         /// <param name="id">The ID of the player to delete.</param>
         /// <returns>
@@ -532,7 +511,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Checks if a player exists in the database.
+        /// Checks if a player exists in the database
         /// </summary>
         /// <param name="id">The unique identifier of the player.</param>
         /// <returns>

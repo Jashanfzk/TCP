@@ -11,35 +11,14 @@ using TorontoCricketLeague.DTOs;
 namespace TorontoCricketLeague.Controllers
 {
     /// <summary>
-    /// Controller for managing Team entities in the Toronto Cricket League.
-    /// Handles CRUD operations for teams including create, read, update, and delete.
-    /// Provides both web interface and API endpoints for team management.
+    /// This controller handles team operations for the cricket league
+    /// It provides endpoints for creating, viewing, editing, and deleting teams
     /// </summary>
     /// <example>
-    /// Web Interface:
-    /// GET /Teams - Shows list of all teams with franchise information
-    /// GET /Teams/Details/1 - Shows detailed view of team with ID 1
-    /// GET /Teams/Create - Shows form to create a new team
-    /// POST /Teams/Create - Creates a new team from form data
-    /// GET /Teams/Edit/1 - Shows form to edit team with ID 1
-    /// POST /Teams/Edit/1 - Updates team with ID 1
-    /// GET /Teams/Delete/1 - Shows confirmation to delete team with ID 1
-    /// POST /Teams/Delete/1 - Deletes team with ID 1
-    /// 
-    /// API Endpoints:
-    /// GET /Teams/ListTeams - Returns JSON list of all teams
-    /// GET /Teams/FindTeam/1 - Returns JSON team with ID 1
-    /// POST /Teams/CreateTeam - Creates new team via API
-    /// PUT /Teams/UpdateTeam/1 - Updates team via API
-    /// DELETE /Teams/DeleteTeam/1 - Deletes team via API
+    /// GET /Teams - Shows list of all teams
+    /// POST /Teams/Create - Creates a new team
+    /// GET /Teams/ListTeams - Returns JSON list of teams
     /// </example>
-    /// <returns>
-    /// Provides complete team management with:
-    /// - Web interface for administrators
-    /// - RESTful API endpoints for external access
-    /// - Data Transfer Objects for API responses
-    /// - Proper validation and error handling
-    /// </returns>
     public class TeamsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -51,7 +30,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all teams in the system with their franchise information.
+        /// Shows a list of all teams with their franchise information
         /// </summary>
         /// <example>
         /// GET /Teams -> Returns view with list of all teams
@@ -71,7 +50,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Retrieves a specific team's details by their ID.
+        /// Shows details for a specific team by ID
         /// </summary>
         /// <param name="id">The unique identifier of the team.</param>
         /// <returns>
@@ -104,7 +83,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to create a new team.
+        /// Shows the form to create a new team
         /// </summary>
         /// <returns>
         /// A view with the create team form including franchise selection.
@@ -122,7 +101,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Creates a new team in the database.
+        /// Creates a new team in the database
         /// </summary>
         /// <param name="team">The team object to add.</param>
         /// <returns>
@@ -154,7 +133,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to edit an existing team.
+        /// Shows the form to edit an existing team
         /// </summary>
         /// <param name="id">The unique identifier of the team to edit.</param>
         /// <returns>
@@ -188,7 +167,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing team in the database.
+        /// Updates an existing team in the database
         /// </summary>
         /// <param name="id">The unique identifier of the team.</param>
         /// <param name="team">The updated team object.</param>
@@ -242,7 +221,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the confirmation page to delete a team.
+        /// Shows the confirmation page to delete a team
         /// </summary>
         /// <param name="id">The unique identifier of the team to delete.</param>
         /// <returns>
@@ -275,7 +254,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a team from the database based on their ID.
+        /// Deletes a team from the database based on their ID
         /// </summary>
         /// <param name="id">The ID of the team to delete.</param>
         /// <returns>
@@ -311,7 +290,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all teams as JSON with franchise information.
+        /// Returns a list of all teams as JSON with franchise information
         /// </summary>
         /// <example>
         /// GET /Teams/ListTeams -> [{"TeamId":1, "Name":"Super Kings A", "City":"Toronto", "FranchiseName":"Super Kings"}, ...]
@@ -343,7 +322,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Retrieves a specific team's details by their ID as JSON.
+        /// Retrieves a specific team's details by their ID as JSON
         /// </summary>
         /// <param name="id">The unique identifier of the team.</param>
         /// <returns>
@@ -382,7 +361,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Adds a new team to the database via API.
+        /// Adds a new team to the database via API
         /// </summary>
         /// <param name="teamDto">The team DTO object to add.</param>
         /// <returns>
@@ -427,7 +406,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing team in the database via API.
+        /// Updates an existing team in the database via API
         /// </summary>
         /// <param name="id">The unique identifier of the team.</param>
         /// <param name="teamDto">The updated team DTO object.</param>
@@ -491,7 +470,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a team from the database based on their ID via API.
+        /// Deletes a team from the database based on their ID via API
         /// </summary>
         /// <param name="id">The ID of the team to delete.</param>
         /// <returns>
@@ -522,7 +501,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Checks if a team exists in the database.
+        /// Checks if a team exists in the database
         /// </summary>
         /// <param name="id">The unique identifier of the team.</param>
         /// <returns>

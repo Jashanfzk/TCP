@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 namespace TorontoCricketLeague.Models
 {
     /// <summary>
-    /// Represents a player in the Toronto Cricket League.
-    /// Each player belongs to a team and has a specific role.
+    /// This model represents a player in the cricket league
+    /// It stores information about players and their relationship with teams
     /// </summary>
     /// <example>
     /// var player = new Player 
@@ -15,9 +15,6 @@ namespace TorontoCricketLeague.Models
     ///     TeamId = 1
     /// };
     /// </example>
-    /// <result>
-    /// The player is created and assigned to a team.
-    /// </result>
     public class Player
     {
         public int PlayerId { get; set; }

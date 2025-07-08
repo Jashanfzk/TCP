@@ -1,6 +1,6 @@
 /// <summary>
-/// Represents the many-to-many relationship between teams and sponsors.
-/// Links teams with their sponsors using a composite primary key.
+/// This model represents the many-to-many relationship between teams and sponsors
+/// It links teams with their sponsors using a composite primary key
 /// </summary>
 /// <example>
 /// var teamSponsor = new TeamSponsor 
@@ -9,9 +9,6 @@
 ///     SponsorId = 2 
 /// };
 /// </example>
-/// <result>
-/// The sponsor is linked to the team and appears in the team's sponsors list.
-/// </result>
 namespace TorontoCricketLeague.Models
 {
     public class TeamSponsor

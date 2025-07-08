@@ -5,15 +5,12 @@ using TorontoCricketLeague.Data;
 using TorontoCricketLeague.Services;
 
 /// <summary>
-/// Main entry point for the Toronto Cricket League web application.
-/// Configures services, database connections, and HTTP request pipeline.
+/// This is the main entry point for the cricket league web application
+/// It configures services, database connections, and the HTTP request pipeline
 /// </summary>
 /// <example>
 /// When you run the project, this file starts the web server and makes the app available.
 /// </example>
-/// <result>
-/// The web application is running and accessible via browser at localhost.
-/// </result>
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

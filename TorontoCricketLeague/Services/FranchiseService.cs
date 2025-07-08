@@ -8,9 +8,8 @@ using TorontoCricketLeague.DTOs;
 namespace TorontoCricketLeague.Services
 {
     /// <summary>
-    /// Service implementation for Franchise operations in the Toronto Cricket League.
-    /// Provides business logic for franchise data retrieval with computed properties.
-    /// Implements the IFranchiseService interface for dependency injection.
+    /// This service provides business logic for franchise operations
+    /// It implements the IFranchiseService interface for dependency injection
     /// </summary>
     /// <example>
     /// Service Usage:
@@ -18,12 +17,6 @@ namespace TorontoCricketLeague.Services
     /// var franchises = await franchiseService.GetAllFranchisesAsync();
     /// var franchise = await franchiseService.GetFranchiseByIdAsync(1);
     /// </example>
-    /// <returns>
-    /// Provides franchise data operations with:
-    /// - Team and sponsor count calculations
-    /// - Entity Framework data access
-    /// - DTO transformation logic
-    /// </returns>
     public class FranchiseService : IFranchiseService
     {
         private readonly ApplicationDbContext _context;
@@ -35,7 +28,7 @@ namespace TorontoCricketLeague.Services
         }
 
         /// <summary>
-        /// Retrieves all franchises with their team and sponsor counts.
+        /// Gets all franchises with their team and sponsor counts
         /// </summary>
         /// <returns>
         /// A collection of FranchiseDto objects containing franchise details with computed counts.
@@ -71,7 +64,7 @@ namespace TorontoCricketLeague.Services
         }
 
         /// <summary>
-        /// Retrieves a specific franchise by its ID with team and sponsor counts.
+        /// Gets a specific franchise by its ID with team and sponsor counts
         /// </summary>
         /// <param name="id">The unique identifier of the franchise to retrieve.</param>
         /// <returns>

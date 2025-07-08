@@ -4,8 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace TorontoCricketLeague.Models
 {
     /// <summary>
-    /// Represents a franchise in the Toronto Cricket League.
-    /// A franchise owns multiple teams and has multiple sponsors.
+    /// This model represents a franchise in the cricket league
+    /// It stores information about franchises and their relationships with teams and sponsors
     /// </summary>
     /// <example>
     /// var franchise = new Franchise 
@@ -15,9 +15,6 @@ namespace TorontoCricketLeague.Models
     ///     LogoUrl = "logo.png"
     /// };
     /// </example>
-    /// <result>
-    /// The franchise is created and can be saved to the database.
-    /// </result>
     public class Franchise
     {
         public int FranchiseId { get; set; }

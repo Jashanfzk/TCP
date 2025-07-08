@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "asM6VqGG3I8=",
+  "dgSpecHash": "EytIl+hbPUI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jasha\\source\\repos\\TorontoCricketLeague\\TorontoCricketLeague\\TorontoCricketLeague.csproj",
+  "projectFilePath": "C:\\Users\\jasha\\Desktop\\TCP\\TCP\\TorontoCricketLeague\\TorontoCricketLeague.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jasha\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jasha\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

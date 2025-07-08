@@ -4,8 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace TorontoCricketLeague.Models
 {
     /// <summary>
-    /// Represents a sponsor in the Toronto Cricket League.
-    /// Sponsors support franchises and can be linked to multiple teams.
+    /// This model represents a sponsor in the cricket league
+    /// It stores information about sponsors and their relationship with franchises
     /// </summary>
     /// <example>
     /// var sponsor = new Sponsor 
@@ -15,9 +15,6 @@ namespace TorontoCricketLeague.Models
     ///     FranchiseId = 1
     /// };
     /// </example>
-    /// <result>
-    /// The sponsor is created and linked to a franchise.
-    /// </result>
     public class Sponsor
     {
         public int SponsorId { get; set; }

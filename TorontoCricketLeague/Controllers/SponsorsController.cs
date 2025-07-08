@@ -9,26 +9,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace TorontoCricketLeague.Controllers
 {
     /// <summary>
-    /// Controller for managing Sponsor entities in the Toronto Cricket League.
-    /// Handles CRUD operations for sponsors including create, read, update, and delete.
-    /// Provides web interface for sponsor management and franchise assignments.
+    /// This controller handles sponsor operations for the cricket league
+    /// It provides endpoints for creating, viewing, editing, and deleting sponsors
     /// </summary>
     /// <example>
-    /// Web Interface:
     /// GET /Sponsors - Shows list of all sponsors
-    /// GET /Sponsors/Create - Shows form to create a new sponsor
-    /// POST /Sponsors/Create - Creates a new sponsor from form data
-    /// GET /Sponsors/Edit/1 - Shows form to edit sponsor with ID 1
-    /// POST /Sponsors/Edit/1 - Updates sponsor with ID 1
-    /// GET /Sponsors/Delete/1 - Shows confirmation to delete sponsor with ID 1
-    /// POST /Sponsors/Delete/1 - Deletes sponsor with ID 1
+    /// POST /Sponsors/Create - Creates a new sponsor
+    /// GET /Sponsors/Edit/1 - Shows form to edit sponsor
     /// </example>
-    /// <returns>
-    /// Provides complete sponsor management with:
-    /// - Web interface for administrators
-    /// - Franchise assignment functionality
-    /// - Proper validation and error handling
-    /// </returns>
     public class SponsorsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -40,7 +28,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all sponsors in the system.
+        /// Shows a list of all sponsors in the system
         /// </summary>
         /// <example>
         /// GET /Sponsors -> Returns view with list of all sponsors
@@ -58,7 +46,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to create a new sponsor.
+        /// Shows the form to create a new sponsor
         /// </summary>
         /// <returns>
         /// A view with the create sponsor form including franchise selection.
@@ -76,7 +64,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Creates a new sponsor in the database.
+        /// Creates a new sponsor in the database
         /// </summary>
         /// <param name="sponsor">The sponsor object to add.</param>
         /// <returns>
@@ -114,7 +102,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to edit an existing sponsor.
+        /// Shows the form to edit an existing sponsor
         /// </summary>
         /// <param name="id">The unique identifier of the sponsor to edit.</param>
         /// <returns>
@@ -148,7 +136,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing sponsor in the database.
+        /// Updates an existing sponsor in the database
         /// </summary>
         /// <param name="id">The unique identifier of the sponsor.</param>
         /// <param name="sponsor">The updated sponsor object.</param>
@@ -212,7 +200,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the confirmation page to delete a sponsor.
+        /// Shows the confirmation page to delete a sponsor
         /// </summary>
         /// <param name="id">The unique identifier of the sponsor to delete.</param>
         /// <returns>
@@ -229,8 +217,9 @@ namespace TorontoCricketLeague.Controllers
                 return NotFound();
             }
 
-            // Get sponsor for confirmation
+            // Get sponsor with related franchise data for confirmation
             var sponsor = await _context.Sponsors
+                .Include(s => s.Franchise)
                 .FirstOrDefaultAsync(m => m.SponsorId == id);
             
             // Check if sponsor exists
@@ -244,7 +233,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a sponsor from the database based on their ID.
+        /// Deletes a sponsor from the database based on their ID
         /// </summary>
         /// <param name="id">The ID of the sponsor to delete.</param>
         /// <returns>
@@ -264,8 +253,10 @@ namespace TorontoCricketLeague.Controllers
             if (sponsor != null)
             {
                 _context.Sponsors.Remove(sponsor);
-                await _context.SaveChangesAsync();
             }
+            
+            // Save changes to the database
+            await _context.SaveChangesAsync();
             
             // Redirect to the index page
             return RedirectToAction(nameof(Index));

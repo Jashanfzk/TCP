@@ -9,121 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TorontoCricketLeague
 build_property.RootNamespace = TorontoCricketLeague
-build_property.ProjectDir = C:\Users\jasha\source\repos\TorontoCricketLeague\TorontoCricketLeague\
+build_property.ProjectDir = C:\Users\jasha\Desktop\TCP\TCP\TorontoCricketLeague\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jasha\source\repos\TorontoCricketLeague\TorontoCricketLeague
+build_property.MSBuildProjectDirectory = C:\Users\jasha\Desktop\TCP\TCP\TorontoCricketLeague
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Franchises/Create.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Franchises/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJhbmNoaXNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Franchises/Delete.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Franchises/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJhbmNoaXNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Franchises/Details.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Franchises/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJhbmNoaXNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Franchises/Edit.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Franchises/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJhbmNoaXNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Franchises/Index.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Franchises/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJhbmNoaXNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Home/Index.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Home/Privacy.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Players/Create.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Players/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Players/Delete.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Players/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Players/Details.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Players/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Players/Edit.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Players/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Players/Index.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Players/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Shared/Error.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Sponsors/Create.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Sponsors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Sponsors/Edit.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Sponsors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Sponsors/Index.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Sponsors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Teams/Create.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Teams/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Teams/Delete.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Teams/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Teams/Details.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Teams/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Teams/Edit.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Teams/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Teams/Index.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Teams/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/_ViewImports.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/_ViewStart.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jasha/source/repos/TorontoCricketLeague/TorontoCricketLeague/Views/Shared/_Layout.cshtml]
+[C:/Users/jasha/Desktop/TCP/TCP/TorontoCricketLeague/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yv8zrnw44t

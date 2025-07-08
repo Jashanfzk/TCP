@@ -4695,11 +4695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jasha\\source\\repos\\TorontoCricketLeague\\TorontoCricketLeague\\TorontoCricketLeague.csproj",
+      "projectUniqueName": "C:\\Users\\jasha\\Desktop\\TCP\\TCP\\TorontoCricketLeague\\TorontoCricketLeague.csproj",
       "projectName": "TorontoCricketLeague",
-      "projectPath": "C:\\Users\\jasha\\source\\repos\\TorontoCricketLeague\\TorontoCricketLeague\\TorontoCricketLeague.csproj",
+      "projectPath": "C:\\Users\\jasha\\Desktop\\TCP\\TCP\\TorontoCricketLeague\\TorontoCricketLeague.csproj",
       "packagesPath": "C:\\Users\\jasha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jasha\\source\\repos\\TorontoCricketLeague\\TorontoCricketLeague\\obj\\",
+      "outputPath": "C:\\Users\\jasha\\Desktop\\TCP\\TCP\\TorontoCricketLeague\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

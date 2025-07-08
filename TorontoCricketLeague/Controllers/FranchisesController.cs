@@ -11,35 +11,14 @@ using TorontoCricketLeague.DTOs;
 namespace TorontoCricketLeague.Controllers
 {
     /// <summary>
-    /// Controller for managing Franchise entities in the Toronto Cricket League.
-    /// Handles CRUD operations for franchises including create, read, update, and delete.
-    /// Provides both web interface and API endpoints for franchise management.
+    /// This controller handles franchise operations for the cricket league
+    /// It provides endpoints for creating, viewing, editing, and deleting franchises
     /// </summary>
     /// <example>
-    /// Web Interface:
-    /// GET /Franchises - Shows list of all franchises with team and sponsor counts
-    /// GET /Franchises/Details/1 - Shows detailed view of franchise with ID 1
-    /// GET /Franchises/Create - Shows form to create a new franchise
-    /// POST /Franchises/Create - Creates a new franchise from form data
-    /// GET /Franchises/Edit/1 - Shows form to edit franchise with ID 1
-    /// POST /Franchises/Edit/1 - Updates franchise with ID 1
-    /// GET /Franchises/Delete/1 - Shows confirmation to delete franchise with ID 1
-    /// POST /Franchises/Delete/1 - Deletes franchise with ID 1
-    /// 
-    /// API Endpoints:
-    /// GET /Franchises/ListFranchises - Returns JSON list of all franchises
-    /// GET /Franchises/FindFranchise/1 - Returns JSON franchise with ID 1
-    /// POST /Franchises/CreateFranchise - Creates new franchise via API
-    /// PUT /Franchises/UpdateFranchise/1 - Updates franchise via API
-    /// DELETE /Franchises/DeleteFranchise/1 - Deletes franchise via API
+    /// GET /Franchises - Shows list of all franchises
+    /// POST /Franchises/Create - Creates a new franchise
+    /// GET /Franchises/ListFranchises - Returns JSON list of franchises
     /// </example>
-    /// <returns>
-    /// Provides complete franchise management with:
-    /// - Web interface for administrators
-    /// - RESTful API endpoints for external access
-    /// - Data Transfer Objects for API responses
-    /// - Proper validation and error handling
-    /// </returns>
     public class FranchisesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -51,7 +30,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all franchises in the system with their team and sponsor counts.
+        /// Shows a list of all franchises with their team and sponsor counts
         /// </summary>
         /// <example>
         /// GET /Franchises -> Returns view with list of all franchises
@@ -72,7 +51,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Retrieves a specific franchise's details by their ID.
+        /// Shows details for a specific franchise by ID
         /// </summary>
         /// <param name="id">The unique identifier of the franchise.</param>
         /// <returns>
@@ -106,7 +85,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to create a new franchise.
+        /// Shows the form to create a new franchise
         /// </summary>
         /// <returns>
         /// A view with the create franchise form.
@@ -121,7 +100,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Creates a new franchise in the database.
+        /// Creates a new franchise in the database
         /// </summary>
         /// <param name="franchise">The franchise object to add.</param>
         /// <returns>
@@ -150,7 +129,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the form to edit an existing franchise.
+        /// Shows the form to edit an existing franchise
         /// </summary>
         /// <param name="id">The unique identifier of the franchise to edit.</param>
         /// <returns>
@@ -181,7 +160,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing franchise in the database.
+        /// Updates an existing franchise in the database
         /// </summary>
         /// <param name="id">The unique identifier of the franchise.</param>
         /// <param name="franchise">The updated franchise object.</param>
@@ -232,7 +211,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Shows the confirmation page to delete a franchise.
+        /// Shows the confirmation page to delete a franchise
         /// </summary>
         /// <param name="id">The unique identifier of the franchise to delete.</param>
         /// <returns>
@@ -266,7 +245,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a franchise from the database based on their ID.
+        /// Deletes a franchise from the database based on their ID
         /// </summary>
         /// <param name="id">The ID of the franchise to delete.</param>
         /// <returns>
@@ -302,7 +281,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Returns a list of all franchises as JSON with team and sponsor counts.
+        /// Returns a list of all franchises as JSON with team and sponsor counts
         /// </summary>
         /// <example>
         /// GET /Franchises/ListFranchises -> [{"FranchiseId":1, "Name":"Super Kings", "HomeCity":"Toronto", "TeamCount":3, "SponsorCount":2}, ...]
@@ -336,7 +315,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Retrieves a specific franchise's details by their ID as JSON.
+        /// Retrieves a specific franchise's details by their ID as JSON
         /// </summary>
         /// <param name="id">The unique identifier of the franchise.</param>
         /// <returns>
@@ -377,7 +356,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Adds a new franchise to the database via API.
+        /// Adds a new franchise to the database via API
         /// </summary>
         /// <param name="franchiseDto">The franchise DTO object to add.</param>
         /// <returns>
@@ -422,7 +401,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Updates an existing franchise in the database via API.
+        /// Updates an existing franchise in the database via API
         /// </summary>
         /// <param name="id">The unique identifier of the franchise.</param>
         /// <param name="franchiseDto">The updated franchise DTO object.</param>
@@ -486,7 +465,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Deletes a franchise from the database based on their ID via API.
+        /// Deletes a franchise from the database based on their ID via API
         /// </summary>
         /// <param name="id">The ID of the franchise to delete.</param>
         /// <returns>
@@ -517,7 +496,7 @@ namespace TorontoCricketLeague.Controllers
         }
 
         /// <summary>
-        /// Checks if a franchise exists in the database.
+        /// Checks if a franchise exists in the database
         /// </summary>
         /// <param name="id">The unique identifier of the franchise.</param>
         /// <returns>

@@ -4,9 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace TorontoCricketLeague.DTOs
 {
     /// <summary>
-    /// Data Transfer Object for Player entities in the Toronto Cricket League.
-    /// Used for API responses to provide player information with team details.
-    /// Contains basic player information along with associated team name.
+    /// This DTO is used for player data transfer in API responses
+    /// It provides player information with associated team details
     /// </summary>
     /// <example>
     /// API Response Example:
@@ -20,12 +19,6 @@ namespace TorontoCricketLeague.DTOs
     ///     "TeamName": "Super Kings A"
     /// }
     /// </example>
-    /// <returns>
-    /// Provides a clean data structure for API responses with:
-    /// - Core player information
-    /// - Associated team details
-    /// - Consistent data format for external consumers
-    /// </returns>
     public class PlayerDto
     {
         /// <summary>

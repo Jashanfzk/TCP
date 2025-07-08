@@ -5,17 +5,14 @@ using TorontoCricketLeague.Models;
 namespace TorontoCricketLeague.Controllers
 {
     /// <summary>
-    /// Controller for handling home page and general navigation.
-    /// Manages main page, privacy page, and error handling.
+    /// This controller handles home page and general navigation
+    /// It provides endpoints for the main page, privacy page, and error handling
     /// </summary>
     /// <example>
     /// GET / - Returns the home page
     /// GET /Home/Privacy - Returns the privacy page
     /// GET /Home/Error - Returns error information
     /// </example>
-    /// <result>
-    /// Users can navigate to different pages and see appropriate content.
-    /// </result>
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
